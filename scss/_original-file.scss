@@ -1,169 +1,62 @@
 /*------------------------------------------------------------------
 [Master Stylesheet]
 
-Project:	Interactive Photo Gallery
-Version:	0.0.1
+Project:	Responsive Layout
+Version:	1.0
 Author: 	@WebDesignerBen
-URI:		https://github.com/BenAttenborough/interactive-ghoto-gallery
+URI:		https://github.com/BenAttenborough/responsive-layout
 
 --------------------------------------------------------------------
 
 [Table of Contents]
 
----GENERAL---
----TYPOGRAPHY---
----LAYOUT---
----ELEMENTS---
----CLEARFIX---
----MEDIA QUERIES---
-	---TABLET AND ABOVE---
+===GLOBAL
+===TYPOGRAPHY
+===CLEARFIX
+===NAVIGATION
+===LAYOUT
+===MEDIA QUERIES
+===MEDIA TABLET
+===MEDIA DESKTOP
 
 Note: Project employs mobile-first philosophy, main styles are for
-mobile then views are progressively enchanced for tablet and
+mobile then views are progressively enchanced up to tablet and
 desktop
 
 -------------------------------------------------------------------*/
 
-/*
- *---GENERAL---
- */
+/* ===GLOBAL=== */
 
 * {
-  box-sizing:border-box;
-}
-
-/*
- *---TYPOGRAPHY---
- */
-
-h1, h2, h3, h4, p, a {
-  font-family: 'Merriweather', serif;
-}
-
-/*
- *---LAYOUT---
- */
-
-header {
-  width: 100%;
-  padding-top: 1px;
-  background-color: #fff;
-  -webkit-box-shadow: 0px 3px 5px 0px rgba(214,214,214,1);
-  -moz-box-shadow: 0px 3px 5px 0px rgba(214,214,214,1);
-  box-shadow: 0px 3px 5px 0px rgba(214,214,214,1);
-  z-index: 100;
-}
-
-html {
-  min-height: 100%;
+  box-sizing: border-box;
 }
 
 body {
-  position: relative;
+  margin: 0;
+  padding: 0;
+  background: #fafafa;
 }
 
-.main-container {
-  width: 100%;
-  /* Specs said this container should be 980px.
-   * Because we are adding 30px padding to both side of the images this width will
-   * need to be 60px larger. Hopefully this won't cause the project to fail.
-   */
-  max-width: 1040px;
-  margin: 0 auto;
-  background-color: #fff;
-  margin-top: 30px;
-}
+/* ===TYPOGRAPHY=== */
 
-/* SEARCH */
-
-.search {
-  padding-top: 1px;
-}
-
-.search__form {
+body {
   text-align: center;
-  margin: 1em 0;
+  font-family: 'Open Sans', sans-serif;
+  color: #7f7f7f;
 }
 
-.search__form__input {
-  font-size: 16pt;
+a {
+  text-decoration: none;
+  color: #7f7f7f;
 }
 
-/*
- *---ELEMENTS---
- */
-
-.pictures {
-  text-align: center;
-  width: 100%;
-  max-width: 980px;
-  margin: 0 auto;
-}
-
-.pictures ul {
-  padding: 30px 60px;
-}
-
-.pictures li {
+ul {
+  padding: 0;
   list-style: none;
-  margin-bottom: 60px;
-  display: inline-block;
-  width: 100%;
 }
 
-.pictures img {
-  width: 100%;
-}
-
-.media-container iframe {
-  height: 80vh;
-}
-
-/*
- * OVERLAY
- *
- * A hidden overlay displayed using jQuery when a user clicks on an image
-*/
-
-#overlay {
-  position: absolute;
-  display: none;
-  width: 100%;
-  height: 100%;
-  background-color: rgb(0,0,0);
-  background-color: rgba(0,0,0,0.9);
-  z-index: 200;
-}
-
-#overlay .col-prev,
-#overlay .col-next {
-  width: 20%;
-  height: 100%;
-  float: left;
-}
-
-#overlay .col-main {
-  width: 60%;
-  height: 100%;
-  float: left;
-}
-
-#overlay .col-main img {
-  /*display: block;*/
-  width: 100%;
-  margin-top: 5%;
-  /*margin: 10% auto;*/
-}
-
-#overlay .nav-btn {
-  display: block;
-  margin: auto;
-  margin-top: 100%;
-}
-
-#overlay p {
-  text-align: center;
-  color: white;
+.project-info a{
+  color: #8080ff;
 }
 
 /* ===CLEARFIX=== */
@@ -174,41 +67,221 @@ body {
   clear: both;
 }
 
+/* ===NAVIGATION=== */
+
+.main-nav {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.main-nav li {
+  background-color: #fff;
+  margin: 10px 0;
+  padding: 10px 0;
+  font-weight: bold;
+}
+
+.main-nav a {
+  display: block;
+}
+
+.main-nav a:hover,
+.footer-mobile-links a:hover,
+.footer-tabletup-links a:hover {
+  color: #000;
+}
+
+.footer-tabletup-links {
+  display: none;
+}
+
+/* ===LAYOUT=== */
+
+#contact,
+footer {
+  width: 90%;
+  margin: 0 auto;
+}
+
 /*
- *---MEDIA QUERIES---
+ * main-container has 2.5% padding on each side then
+ * each section has 2.5% margin on each side so that there will
+ * be 5% clearence on the margins of the viewport as well
+ * as between the containers on multi-column views
  */
 
-/*---TABLET AND ABOVE---*/
+.main-container {
+  background-color: #fff;
+  padding: 5px 2.5%;
+  max-width: 3000px;
+  margin: 0 auto;
+}
 
-@media (min-width: 500px) {
+.section {
+  margin: 2.5%;
+  float: left;
+}
 
-  .pictures ul {
-    padding: 30px;
+.section img{
+  width: 100%;
+}
+
+.bio {
+  width: 90%;
+  margin: 1em auto 0;
+}
+
+.bio img {
+  border-radius: 100%;
+  width: 40%;
+  margin: 60px 0;
+}
+
+.bio-img {
+  background: #ededed;
+  width: 80%;
+  margin: 0 auto;
+}
+
+#portfolio {
+  display: block;
+  width: 100%;
+}
+
+.project-info {
+  width: 90%;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.footer-name {
+  float: left;
+}
+
+.footer-toplink {
+  float: right;
+}
+
+/* ===MEDIA QUERIES=== */
+
+/* ===MEDIA TABLET=== */
+
+@media (min-width: 600px) {
+
+  .main-nav {
+    display: inline-block;
   }
 
-  .pictures li {
-    width: 50%;
+  .main-nav li {
+    display: inline-block;
+    padding-left: 10px;
+    padding-right: 10px;
+    background: #fafafa;
+    margin: 0 10px;
+  }
+
+  .footer-mobile-links{
+    display: none;
+  }
+
+  .footer-tabletup-links {
+    display: block;
+    float: right;
+  }
+
+  .footer-tabletup-links li {
+    display: inline;
+    margin-right:  10px;
+    font-weight: bold;
+  }
+
+  .section {
+    /* 2 columns 5% margin (2.5% both sides) = 45% width each */
+    width: 45%;
+    -webkit-box-shadow: 3px 3px 5px 0px rgba(189,189,189,1);
+    -moz-box-shadow: 3px 3px 5px 0px rgba(189,189,189,1);
+    box-shadow: 3px 3px 5px 0px rgba(189,189,189,1);
+  }
+
+  .section-text {
+    padding: 0 1em;
+    min-height: 140px;
+  }
+
+  .image-container {
+    position: relative;
+  }
+
+  .image-info {
+    display: inline-block;
+    position: absolute;
+    top: calc(50% - 12.5px);
+    left: calc(50% - 75px);
+    color: #000;
+  }
+
+  .image-info h3 {
+    margin: 0;
+  }
+
+  .bio-img,
+  .bio-text {
+    width: 45%;
+    float: right;
+    margin: 0 2.5%;
+  }
+
+  .bio-img {
+    margin-top: 1em;
+  }
+
+  .bio {
+    width: 100%;
+    padding: 0 2.5%;
+    margin-bottom: 2em;
+  }
+
+}
+
+/* ===MEDIA DESKTOP=== */
+
+@media (min-width: 1016px) {
+
+  .name {
+    display: inline-block;
     float: left;
-    padding: 0 30px;
   }
 
-  .search__form__input  {
-    width: 460px;
-  }
-}
-
-@media (min-width: 800px) {
-
-  .pictures li {
-    width: 32.33333%;
+  .main-nav ul {
+    float: right;
   }
 
-}
+  .bio-text {
+    width: 55%;
+    padding: 0 10%;
+  }
 
-@media (min-width: 1000px) {
+  .bio-img {
+    width: 35%;
+  }
 
-  .pictures li {
-    width: 25%;
+  .section {
+    /* 3 columns 5% margin (2.5% both sides) = 28.33333333% width each */
+    width: 28.33333333%;
+    float: left;
+  }
+
+  .section-img {
+    overflow: hidden;
+  }
+
+  /* CSS zoom effect on hover (I'm avoiding hover styles on smaller views) */
+  .image {
+    transition: all .5s;
+  }
+
+  .image:hover {
+    transform: scale(1.2);
   }
 
 }

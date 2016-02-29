@@ -2,149 +2,145 @@
 
 <html lang="en">
 
-<head>
+  <head>
     <meta charset="utf-8">
-    <title>Interactive Photo Galler</title>
+    <title>Responsive layout</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,700,400italic,300,300italic' rel='stylesheet'
-          type='text/css'>
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- Could add normalize via cdn:
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css"> -->
     <link rel="stylesheet" href="css/styles.css">
-</head>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+  </head>
 
-<body>
-<header>
-    <div class="search clearfix">
-        <form class="search__form" action="index.html" method="POST">
-            <input class="search__form__input" type="text" id="search" name="search">
-        </form>
-    </div>
-</header>
+  <body id="top">
 
-<div class="main-container clearfix">
+    <header>
+      <nav class="main-nav">
+        <h1 class="name">Ben Attenborough</h1>
+        <ul>
+          <li><a href="#top">Home</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
     <main>
-        <div class="pictures">
-            <ul>
-                <li>
-                    <a href="img/01.jpg">
-                        <img src="img/Thumbnails/01.jpg"
-                             alt="I love hay bales. Took this snap on a drive through the countryside past some straw fields."
-                        >
-                    </a>
-                </li>
-                <li>
-                    <a href="img/02.jpg">
-                        <img src="img/Thumbnails/02.jpg"
-                             alt="The lake was so calm today. We had a great view of the snow on the mountains from here."
-                        >
-                    </a>
-                </li>
-                <li>
-                    <a href="img/03.jpg">
-                        <img src="img/Thumbnails/03.jpg"
-                             alt="I hiked to the top of the mountain and got this picture of the canyon and trees below."
-                        >
-                    </a>
-                </li>
-                <li>
-                    <a href="img/04.jpg">
-                        <img src="img/Thumbnails/04.jpg"
-                             alt="It was amazing to see an iceberg up close, it was so cold but didn’t snow today."
-                        >
-                    </a>
-                </li>
-                <li>
-                    <a href="img/05.jpg">
-                        <img src="img/Thumbnails/05.jpg"
-                             alt="The red cliffs were beautiful. It was really hot in the desert but we did a lot of walking through the canyons."
-                        >
-                    </a>
-                </li>
-                <li>
-                    <a href="img/06.jpg">
-                        <img src="img/Thumbnails/06.jpg"
-                             alt="Fall is coming, I love when the leaves on the trees start to change color."
-                        >
-                    </a>
-                </li>
-                <li>
-                    <a href="img/07.jpg">
-                        <img src="img/Thumbnails/07.jpg"
-                             alt="I drove past this plantation yesterday, everything is so green!"
-                        >
-                    </a>
-                </li>
-                <li>
-                    <a href="img/08.jpg">
-                        <img src="img/Thumbnails/08.jpg"
-                             alt="My summer vacation to the Oregon Coast. I love the sandy dunes!"
-                        >
-                    </a>
-                </li>
-                <li>
-                    <a href="img/09.jpg">
-                        <img src="img/Thumbnails/09.jpg"
-                             alt="We enjoyed a quiet stroll down this countryside lane."
-                        >
-                    </a>
-                </li>
-                <li>
-                    <a href="img/10.jpg">
-                        <img src="img/Thumbnails/10.jpg"
-                             alt="Sunset at the coast! The sky turned a lovely shade of orange."
-                        >
-                    </a>
-                </li>
-                <li>
-                    <a href="img/11.jpg">
-                        <img src="img/Thumbnails/11.jpg"
-                             alt="I did a tour of a cave today and the view of the landscape below was breathtaking."
-                        >
-                    </a>
-                </li>
-                <li>
-                    <a href="img/12.jpg">
-                        <img src="img/Thumbnails/12.jpg"
-                             alt="I walked through this meadow of bluebells and got a good view of the snow on the mountain before the fog came in."
-                        >
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.youtube.com/watch?v=Wnr8LRO7CiA">
-                        <img src="img/Thumbnails/treehouse-youtube.jpg"
-                             alt="<p>Join <a href='http://trhou.se/148kMOY'>Treehouse</a> today, start your free trial and become our next success story!.</p>"
-                        >
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.youtube.com/watch?v=Jl3M3rs-j-A">
-                        <img src="img/Thumbnails/DB10-youtube.jpg"
-                             alt="James Bond Spectre stunt driver Mark Higgins unveils the Aston Martin DB10 and tells Eastlife.co.uk magazine about life as a daredevil. Interviewed at the Grange Aston Martin dealership in Brentwood Essex."
-                        >
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.mixcloud.com/CraigCharles/the-craig-charles-mystery-mix/">
-                        <img src="img/Thumbnails/craig-charles.jpg"
-                             alt="This is a mystery mix from your favourite funkster, Craig Charles! Get some funk in your trunk!"
-                        >
-                    </a>
-                </li>
-            </ul>
+
+      <div class="bio clearfix">
+        <div class="bio-img">
+          <img src="images/me.jpg" alt="Photo of Ben Attenborough">
         </div>
+        <div class="bio-text">
+          <p>I'm an experienced digital developer with skills in graphic design. Also a background in journalism, marketing and PR.</p>
+          <p>My strengths in website development. Specialisations include WordPress development, including theme and plugin installation and development.</p>
+        </div>
+      </div>
+
+      <div class="main-container clearfix">
+
+        <div id="portfolio">
+          <h2>Portfolio</h2>
+        </div>
+
+        <div class="section">
+          <a href="Typography.html">
+          <div class="section-img">
+            <img class="image" src="images/type-cutting.jpg" alt="">
+          </div>
+          <div class="section-text">
+            <h3>Typography Project</h3>
+            <p>The aim of this project was to create a signage system for the Cambridge Museum of Technology.</p>
+          </div>
+          </a>
+        </div>
+
+        <div class="section">
+          <a href="cyclops.html">
+          <div class="section-img">
+            <img class="image" src="images/cyclops01.jpg" alt="">
+          </div>
+          <div class="section-text">
+            <h3>Book design</h3>
+            <p>This project explores the possibilities of resetting a myth in a different context.</p>
+          </div>
+        </a>
+        </div>
+
+        <div class="section">
+          <a href="music-mirrors.html">
+          <div class="section-img">
+            <img class="image" src="images/music-mirrors-01.jpg" alt="">
+          </div>
+          <div class="section-text">
+            <h3>Music Mirrors</h3>
+            <p>This is a social media project for storing and sharing music memories aimed at families coping with dementia.</p>
+          </div>
+          </a>
+        </div>
+
+        <div class="section">
+          <div class="section-img">
+            <img class="image" src="images/portfolio-3.png" alt="">
+          </div>
+          <div class="section-text">  
+            <h3>Map of Favourite Spots</h3>
+            <p>This project uses mapping apis to plot points for my favourite spots in the city for a do-it-yourself walking tour.</p>
+          </div>
+        </div>
+
+        <div class="section">
+          <div class="section-img">
+            <img class="image" src="images/portfolio-5.png" alt="">
+          </div>
+          <div class="section-text">
+            <h3>Photo Gallery</h3>
+            <p>This project shows pictures from a recent trip to the viewer and allows them to easily navigate through photos.</p>
+          </div>
+        </div>
+
+        <div class="section">
+          <div class="section-img">
+            <img class="image" src="images/portfolio-4.png" alt="">
+          </div>
+          <div class="section-text">
+            <h3>Calculator</h3>
+            <p>Someone can enter in the numbers they want, and press the big blue button and get the results.</p>
+          </div>
+        </div>
+
+      </div> <!-- END main-container -->
+
     </main>
 
+    <div id="contact">
+      <h2>CONTACT</h2>
+      <p>If you're interested in chatting or want more information about what I've been working on, I'd love to hear from you!</p>
+      <ul>
+        <li>Phone <strong>+1 (111)555-1234</strong></li>
+        <li>Email <strong>email@yoursite.com</strong></li>
+      </ul>
+    </div>
+
     <footer>
+      <hr>
+      <div class="footer-name"><p><strong>Ben Attenborough</strong></p></div>
+      
+      <div class="footer-mobile-links">
+        <div class="footer-toplink"><p><a href="#top"><strong>BACK TO TOP</strong></a></p></div>
+      </div>      
+      
+      <div class="footer-tabletup-links">
+        <ul>
+          <li><a href="#top">Home</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
     </footer>
 
-</div>
-<script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
-<script type="text/javascript" src="inc/pictures.js"></script>
-<!-- // <script type="text/javascript" src="js/main.js"></script> -->
-<!-- // <script type="text/javascript" src="js/search.js"></script> -->
-
-<script type="text/javascript" src="js/views.js"></script>
-<script type="text/javascript" src="js/controllers.js"></script>
-<script type="text/javascript" src="js/gallery.js"></script>
-</body>
+  </body>
 
 </html>
