@@ -1,4 +1,9 @@
-@import "variables";
-@import "mixins";
-@import "functions";
-@import "placeholders";
+/* ===CLEARFIX=== */
+
+%clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
