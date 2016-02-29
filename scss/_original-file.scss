@@ -25,47 +25,14 @@ desktop
 
 -------------------------------------------------------------------*/
 
-/* ===GLOBAL=== */
 
-* {
-  box-sizing: border-box;
-}
 
-body {
-  margin: 0;
-  padding: 0;
-  background: #fafafa;
-}
-
-/* ===TYPOGRAPHY=== */
-
-body {
-  text-align: center;
-  font-family: 'Open Sans', sans-serif;
-  color: #7f7f7f;
-}
-
-a {
-  text-decoration: none;
-  color: #7f7f7f;
-}
-
-ul {
-  padding: 0;
-  list-style: none;
-}
 
 .project-info a{
   color: #8080ff;
 }
 
-/* ===CLEARFIX=== */
 
-.clearfix::after {
-  content: " ";
-  display: table;
-  clear: both;
-}
 
 /* ===NAVIGATION=== */
 
@@ -111,6 +78,7 @@ footer {
  */
 
 .main-container {
+  @extend %clearfix;
   background-color: #fff;
   padding: 5px 2.5%;
   max-width: 3000px;
@@ -127,6 +95,7 @@ footer {
 }
 
 .bio {
+  @extend %clearfix;
   width: 90%;
   margin: 1em auto 0;
 }
