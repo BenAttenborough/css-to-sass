@@ -1,108 +1,16 @@
 
 
 
-.project-info a{
-  color: #8080ff;
-}
 
 
 
-/* ===NAVIGATION=== */
 
-.main-nav {
-  width: 90%;
-  margin: 0 auto;
-}
 
-.main-nav li {
-  background-color: #fff;
-  margin: 10px 0;
-  padding: 10px 0;
-  font-weight: bold;
-}
-
-.main-nav a {
-  display: block;
-}
-
-.main-nav a:hover,
-.footer-mobile-links a:hover,
-.footer-tabletup-links a:hover {
-  color: #000;
-}
-
-.footer-tabletup-links {
-  display: none;
-}
 
 /* ===LAYOUT=== */
 
-#contact,
-footer {
-  width: 90%;
-  margin: 0 auto;
-}
 
-/*
- * main-container has 2.5% padding on each side then
- * each section has 2.5% margin on each side so that there will
- * be 5% clearence on the margins of the viewport as well
- * as between the containers on multi-column views
- */
 
-.main-container {
-  @extend %clearfix;
-  background-color: #fff;
-  padding: 5px 2.5%;
-  max-width: 3000px;
-  margin: 0 auto;
-}
-
-.section {
-  margin: 2.5%;
-  float: left;
-}
-
-.section img{
-  width: 100%;
-}
-
-.bio {
-  @extend %clearfix;
-  width: 90%;
-  margin: 1em auto 0;
-}
-
-.bio img {
-  border-radius: 100%;
-  width: 40%;
-  margin: 60px 0;
-}
-
-.bio-img {
-  background: #ededed;
-  width: 80%;
-  margin: 0 auto;
-}
-
-#portfolio {
-  display: block;
-  width: 100%;
-}
-
-.project-info {
-  width: 90%;
-  max-width: 500px;
-  margin: 0 auto;
-}
-
-.footer-name {
-  float: left;
-}
-
-.footer-toplink {
-  float: right;
-}
 
 /* ===MEDIA QUERIES=== */
 
@@ -110,17 +18,7 @@ footer {
 
 @media (min-width: 600px) {
 
-  .main-nav {
-    display: inline-block;
-  }
 
-  .main-nav li {
-    display: inline-block;
-    padding-left: 10px;
-    padding-right: 10px;
-    background: #fafafa;
-    margin: 0 10px;
-  }
 
   .footer-mobile-links{
     display: none;

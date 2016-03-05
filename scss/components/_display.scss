@@ -1,0 +1,37 @@
+.bio {
+  @extend %clearfix;
+  width: 90%;
+  margin: 1em auto 0;
+}
+
+.bio img {
+  border-radius: 100%;
+  width: 40%;
+  margin: 60px 0;
+}
+
+.bio-img {
+  background: #ededed;
+  width: 80%;
+  margin: 0 auto;
+}
+
+#portfolio {
+  display: block;
+  width: 100%;
+}
+
+.project-info {
+  width: 90%;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+#contact {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.project-info a{
+  color: #8080ff;
+}

@@ -1,3 +1,29 @@
+/*------------------------------------------------------------------
+[Master Stylesheet]
+
+Project:	Responsive Layout
+Version:	1.0
+Author: 	@WebDesignerBen
+URI:		https://github.com/BenAttenborough/responsive-layout
+
+--------------------------------------------------------------------
+
+[Table of Contents]
+
+===GLOBAL
+===TYPOGRAPHY
+===CLEARFIX
+===NAVIGATION
+===LAYOUT
+===MEDIA QUERIES
+===MEDIA TABLET
+===MEDIA DESKTOP
+
+Note: Project employs mobile-first philosophy, main styles are for
+mobile then views are progressively enchanced up to tablet and
+desktop
+
+-------------------------------------------------------------------*/
 /* ==========================================================================
    Normalize.scss settings
    ========================================================================== */
@@ -368,20 +394,6 @@ td,
 th {
   padding: 0; }
 
-/* ===TYPOGRAPHY=== */
-body {
-  text-align: center;
-  font-family: 'Open Sans', sans-serif;
-  color: #7f7f7f; }
-
-a {
-  text-decoration: none;
-  color: #7f7f7f; }
-
-ul {
-  padding: 0;
-  list-style: none; }
-
 /* ===GLOBAL=== */
 * {
   box-sizing: border-box; }
@@ -396,63 +408,6 @@ body {
   content: "";
   display: table;
   clear: both; }
-
-/*------------------------------------------------------------------
-[Master Stylesheet]
-
-Project:	Responsive Layout
-Version:	1.0
-Author: 	@WebDesignerBen
-URI:		https://github.com/BenAttenborough/responsive-layout
-
---------------------------------------------------------------------
-
-[Table of Contents]
-
-===GLOBAL
-===TYPOGRAPHY
-===CLEARFIX
-===NAVIGATION
-===LAYOUT
-===MEDIA QUERIES
-===MEDIA TABLET
-===MEDIA DESKTOP
-
-Note: Project employs mobile-first philosophy, main styles are for
-mobile then views are progressively enchanced up to tablet and
-desktop
-
--------------------------------------------------------------------*/
-.project-info a {
-  color: #8080ff; }
-
-/* ===NAVIGATION=== */
-.main-nav {
-  width: 90%;
-  margin: 0 auto; }
-
-.main-nav li {
-  background-color: #fff;
-  margin: 10px 0;
-  padding: 10px 0;
-  font-weight: bold; }
-
-.main-nav a {
-  display: block; }
-
-.main-nav a:hover,
-.footer-mobile-links a:hover,
-.footer-tabletup-links a:hover {
-  color: #000; }
-
-.footer-tabletup-links {
-  display: none; }
-
-/* ===LAYOUT=== */
-#contact,
-footer {
-  width: 90%;
-  margin: 0 auto; }
 
 /*
  * main-container has 2.5% padding on each side then
@@ -472,6 +427,61 @@ footer {
 
 .section img {
   width: 100%; }
+
+.footer-name {
+  float: left; }
+
+.footer-toplink {
+  float: right; }
+
+footer {
+  width: 90%;
+  margin: 0 auto; }
+
+/* ===TYPOGRAPHY=== */
+body {
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  color: #7f7f7f; }
+
+a {
+  text-decoration: none;
+  color: #7f7f7f; }
+
+ul {
+  padding: 0;
+  list-style: none; }
+
+/* ===NAVIGATION=== */
+.main-nav {
+  width: 90%;
+  margin: 0 auto; }
+  @media (min-width: 600px) {
+    .main-nav {
+      display: inline-block; } }
+
+.main-nav li {
+  margin: 10px 0;
+  padding: 10px 0;
+  font-weight: bold; }
+  @media (min-width: 600px) {
+    .main-nav li {
+      display: inline-block;
+      padding-left: 10px;
+      padding-right: 10px;
+      background: #fafafa;
+      margin: 0 10px; } }
+
+.main-nav a {
+  display: block; }
+
+.main-nav a:hover,
+.footer-mobile-links a:hover,
+.footer-tabletup-links a:hover {
+  color: #000; }
+
+.footer-tabletup-links {
+  display: none; }
 
 .bio {
   width: 90%;
@@ -496,25 +506,17 @@ footer {
   max-width: 500px;
   margin: 0 auto; }
 
-.footer-name {
-  float: left; }
+#contact {
+  width: 90%;
+  margin: 0 auto; }
 
-.footer-toplink {
-  float: right; }
+.project-info a {
+  color: #8080ff; }
 
+/* ===LAYOUT=== */
 /* ===MEDIA QUERIES=== */
 /* ===MEDIA TABLET=== */
 @media (min-width: 600px) {
-  .main-nav {
-    display: inline-block; }
-
-  .main-nav li {
-    display: inline-block;
-    padding-left: 10px;
-    padding-right: 10px;
-    background: #fafafa;
-    margin: 0 10px; }
-
   .footer-mobile-links {
     display: none; }
 
