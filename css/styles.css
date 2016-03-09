@@ -424,6 +424,27 @@ body {
 .section {
   margin: 2.5%;
   float: left; }
+  @media (min-width: 600px) {
+    .section {
+      /* 2 columns 5% margin (2.5% both sides) = 45% width each */
+      width: 45%;
+      -webkit-box-shadow: 3px 3px 5px 0 #bdbdbd;
+      -moz-box-shadow: 3px 3px 5px 0 #bdbdbd;
+      box-shadow: 3px 3px 5px 0 #bdbdbd; } }
+  @media (min-width: 1016px) {
+    .section {
+      /* 3 columns 5% margin (2.5% both sides) = 28.33333333% width each */
+      width: 28.33333333%;
+      float: left; } }
+
+@media (min-width: 1016px) {
+  .section-img {
+    overflow: hidden; } }
+
+@media (min-width: 600px) {
+  .section-text {
+    padding: 0 1em;
+    min-height: 140px; } }
 
 .section img {
   width: 100%; }
@@ -438,6 +459,18 @@ footer {
   width: 90%;
   margin: 0 auto; }
 
+@media (min-width: 600px) {
+  .footer-mobile-links {
+    display: none; }
+
+  .footer-tabletup-links {
+    display: block;
+    float: right; }
+
+  .footer-tabletup-links li {
+    display: inline;
+    margin-right: 10px;
+    font-weight: bold; } }
 /* ===TYPOGRAPHY=== */
 body {
   text-align: center;
@@ -459,6 +492,10 @@ ul {
   @media (min-width: 600px) {
     .main-nav {
       display: inline-block; } }
+
+@media (min-width: 1016px) {
+  .main-nav ul {
+    float: right; } }
 
 .main-nav li {
   margin: 10px 0;
@@ -486,6 +523,11 @@ ul {
 .bio {
   width: 90%;
   margin: 1em auto 0; }
+  @media (min-width: 600px) {
+    .bio {
+      width: 100%;
+      padding: 0 2.5%;
+      margin-bottom: 2em; } }
 
 .bio img {
   border-radius: 100%;
@@ -496,6 +538,24 @@ ul {
   background: #ededed;
   width: 80%;
   margin: 0 auto; }
+  @media (min-width: 600px) {
+    .bio-img {
+      width: 45%;
+      float: right;
+      margin: 1em 2.5% 0; } }
+  @media (min-width: 1016px) {
+    .bio-img {
+      width: 35%; } }
+
+@media (min-width: 600px) {
+  .bio-text {
+    width: 45%;
+    float: right;
+    margin: 0 2.5%; } }
+@media (min-width: 1016px) {
+  .bio-text {
+    width: 55%;
+    padding: 0 10%; } }
 
 #portfolio {
   display: block;
@@ -513,88 +573,39 @@ ul {
 .project-info a {
   color: #8080ff; }
 
-/* ===LAYOUT=== */
-/* ===MEDIA QUERIES=== */
-/* ===MEDIA TABLET=== */
 @media (min-width: 600px) {
-  .footer-mobile-links {
-    display: none; }
-
-  .footer-tabletup-links {
-    display: block;
-    float: right; }
-
-  .footer-tabletup-links li {
-    display: inline;
-    margin-right: 10px;
-    font-weight: bold; }
-
-  .section {
-    /* 2 columns 5% margin (2.5% both sides) = 45% width each */
-    width: 45%;
-    -webkit-box-shadow: 3px 3px 5px 0px #bdbdbd;
-    -moz-box-shadow: 3px 3px 5px 0px #bdbdbd;
-    box-shadow: 3px 3px 5px 0px #bdbdbd; }
-
-  .section-text {
-    padding: 0 1em;
-    min-height: 140px; }
-
   .image-container {
-    position: relative; }
+    position: relative; } }
 
+@media (min-width: 600px) {
   .image-info {
     display: inline-block;
     position: absolute;
     top: calc(50% - 12.5px);
     left: calc(50% - 75px);
-    color: #000; }
+    color: #000; } }
 
+@media (min-width: 600px) {
   .image-info h3 {
-    margin: 0; }
+    margin: 0; } }
 
-  .bio-img,
-  .bio-text {
-    width: 45%;
-    float: right;
-    margin: 0 2.5%; }
+/* CSS zoom effect on hover (I'm avoiding hover styles on smaller views) */
+@media (min-width: 1016px) {
+  .image {
+    transition: all .5s; } }
 
-  .bio-img {
-    margin-top: 1em; }
+@media (min-width: 1016px) {
+  .image:hover {
+    transform: scale(1.2); } }
 
-  .bio {
-    width: 100%;
-    padding: 0 2.5%;
-    margin-bottom: 2em; } }
-/* ===MEDIA DESKTOP=== */
 @media (min-width: 1016px) {
   .name {
     display: inline-block;
-    float: left; }
+    float: left; } }
 
-  .main-nav ul {
-    float: right; }
-
-  .bio-text {
-    width: 55%;
-    padding: 0 10%; }
-
-  .bio-img {
-    width: 35%; }
-
-  .section {
-    /* 3 columns 5% margin (2.5% both sides) = 28.33333333% width each */
-    width: 28.33333333%;
-    float: left; }
-
-  .section-img {
-    overflow: hidden; }
-
-  /* CSS zoom effect on hover (I'm avoiding hover styles on smaller views) */
-  .image {
-    transition: all .5s; }
-
-  .image:hover {
-    transform: scale(1.2); } }
+/* ===LAYOUT=== */
+/* ===MEDIA QUERIES=== */
+/* ===MEDIA TABLET=== */
+/* ===MEDIA DESKTOP=== */
 
 /*# sourceMappingURL=styles.css.map */

@@ -10,3 +10,22 @@ footer {
   width: 90%;
   margin: 0 auto;
 }
+
+@media #{$tablet} {
+
+  .footer-mobile-links{
+    display: none;
+  }
+
+  .footer-tabletup-links {
+    display: block;
+    float: right;
+  }
+
+  .footer-tabletup-links li {
+    display: inline;
+    margin-right:  10px;
+    font-weight: bold;
+  }
+
+}

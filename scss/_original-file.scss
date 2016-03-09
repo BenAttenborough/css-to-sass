@@ -20,66 +20,14 @@
 
 
 
-  .footer-mobile-links{
-    display: none;
-  }
 
-  .footer-tabletup-links {
-    display: block;
-    float: right;
-  }
 
-  .footer-tabletup-links li {
-    display: inline;
-    margin-right:  10px;
-    font-weight: bold;
-  }
 
-  .section {
-    /* 2 columns 5% margin (2.5% both sides) = 45% width each */
-    width: 45%;
-    -webkit-box-shadow: 3px 3px 5px 0px rgba(189,189,189,1);
-    -moz-box-shadow: 3px 3px 5px 0px rgba(189,189,189,1);
-    box-shadow: 3px 3px 5px 0px rgba(189,189,189,1);
-  }
 
-  .section-text {
-    padding: 0 1em;
-    min-height: 140px;
-  }
 
-  .image-container {
-    position: relative;
-  }
 
-  .image-info {
-    display: inline-block;
-    position: absolute;
-    top: calc(50% - 12.5px);
-    left: calc(50% - 75px);
-    color: #000;
-  }
 
-  .image-info h3 {
-    margin: 0;
-  }
 
-  .bio-img,
-  .bio-text {
-    width: 45%;
-    float: right;
-    margin: 0 2.5%;
-  }
-
-  .bio-img {
-    margin-top: 1em;
-  }
-
-  .bio {
-    width: 100%;
-    padding: 0 2.5%;
-    margin-bottom: 2em;
-  }
 
 }
 
@@ -87,41 +35,13 @@
 
 @media (min-width: 1016px) {
 
-  .name {
-    display: inline-block;
-    float: left;
-  }
 
-  .main-nav ul {
-    float: right;
-  }
 
-  .bio-text {
-    width: 55%;
-    padding: 0 10%;
-  }
 
-  .bio-img {
-    width: 35%;
-  }
 
-  .section {
-    /* 3 columns 5% margin (2.5% both sides) = 28.33333333% width each */
-    width: 28.33333333%;
-    float: left;
-  }
 
-  .section-img {
-    overflow: hidden;
-  }
 
-  /* CSS zoom effect on hover (I'm avoiding hover styles on smaller views) */
-  .image {
-    transition: all .5s;
-  }
 
-  .image:hover {
-    transform: scale(1.2);
-  }
+
 
 }

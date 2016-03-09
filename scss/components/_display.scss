@@ -2,6 +2,13 @@
   @extend %clearfix;
   width: 90%;
   margin: 1em auto 0;
+
+  @media #{$tablet} {
+    width: 100%;
+    padding: 0 2.5%;
+    margin-bottom: 2em;
+  }
+
 }
 
 .bio img {
@@ -14,6 +21,26 @@
   background: #ededed;
   width: 80%;
   margin: 0 auto;
+  @media #{$tablet} {
+    width: 45%;
+    float: right;
+    margin: 1em 2.5% 0;
+  }
+  @media #{$desktop} {
+    width: 35%;
+  }
+}
+
+.bio-text {
+  @media #{$tablet} {
+    width: 45%;
+    float: right;
+    margin: 0 2.5%;
+  }
+  @media #{$desktop} {
+    width: 55%;
+    padding: 0 10%;
+  }
 }
 
 #portfolio {
@@ -34,4 +61,46 @@
 
 .project-info a{
   color: #8080ff;
+}
+
+.image-container {
+  @media #{$tablet} {
+    position: relative;
+  }
+}
+
+.image-info {
+  @media #{$tablet} {
+    display: inline-block;
+    position: absolute;
+    top: calc(50% - 12.5px);
+    left: calc(50% - 75px);
+    color: #000;
+  }
+}
+
+.image-info h3 {
+  @media #{$tablet} {
+    margin: 0;
+  }
+}
+
+/* CSS zoom effect on hover (I'm avoiding hover styles on smaller views) */
+.image {
+  @media #{$desktop} {
+    transition: all .5s;
+  }
+}
+
+.image:hover {
+  @media #{$desktop} {
+    transform: scale(1.2);
+  }
+}
+
+.name {
+  @media #{$desktop} {
+    display: inline-block;
+    float: left;
+  }
 }
