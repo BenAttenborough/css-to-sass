@@ -493,9 +493,18 @@ ul {
     .main-nav {
       display: inline-block; } }
 
-@media (min-width: 1016px) {
-  .main-nav ul {
-    float: right; } }
+@media (min-width: 600px) {
+  .mobile-menu {
+    display: none; } }
+
+.main-nav ul {
+  display: none; }
+  @media (min-width: 600px) {
+    .main-nav ul {
+      display: block; } }
+  @media (min-width: 1016px) {
+    .main-nav ul {
+      float: right; } }
 
 .main-nav li {
   margin: 10px 0;

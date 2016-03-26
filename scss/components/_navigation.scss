@@ -10,7 +10,17 @@
 
 }
 
+.mobile-menu {
+  @media #{$tablet} {
+    display: none;
+  }
+}
+
 .main-nav ul {
+  display: none;
+  @media #{$tablet} {
+    display: block;
+  }
   @media #{$desktop} {
     float: right;
   }
