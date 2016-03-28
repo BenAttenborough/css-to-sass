@@ -409,6 +409,11 @@ body {
   display: table;
   clear: both; }
 
+.section {
+  -webkit-box-shadow: 3px 3px 5px 0 #bdbdbd;
+  -moz-box-shadow: 3px 3px 5px 0 #bdbdbd;
+  box-shadow: 3px 3px 5px 0 #bdbdbd; }
+
 /*
  * main-container has 2.5% padding on each side then
  * each section has 2.5% margin on each side so that there will
@@ -423,14 +428,15 @@ body {
 
 .section {
   margin: 2.5%;
-  float: left; }
+  float: left;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  border-radius: 10px; }
   @media (min-width: 600px) {
     .section {
       /* 2 columns 5% margin (2.5% both sides) = 45% width each */
-      width: 45%;
-      -webkit-box-shadow: 3px 3px 5px 0 #bdbdbd;
-      -moz-box-shadow: 3px 3px 5px 0 #bdbdbd;
-      box-shadow: 3px 3px 5px 0 #bdbdbd; } }
+      width: 45%; } }
   @media (min-width: 1016px) {
     .section {
       /* 3 columns 5% margin (2.5% both sides) = 28.33333333% width each */
@@ -539,7 +545,6 @@ ul {
       margin-bottom: 2em; } }
 
 .bio img {
-  border-radius: 100%;
   width: 40%;
   margin: 60px 0; }
 
@@ -598,7 +603,6 @@ ul {
   .image-info h3 {
     margin: 0; } }
 
-/* CSS zoom effect on hover (I'm avoiding hover styles on smaller views) */
 @media (min-width: 1016px) {
   .image {
     transition: all .5s; } }

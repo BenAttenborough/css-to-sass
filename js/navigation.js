@@ -4,6 +4,17 @@
 
 console.log("navigation.js working");
 
-$(".mobile-menu").click( function(){
+//$(".main-nav ul").hide();
+
+$(".mobile-menu a").click( function(){
+    event.preventDefault();
     console.log("Menu clicked");
+    $(".main-nav ul").toggle( "slow" );
+});
+
+$( window ).resize(function() {
+    //Reshow menu if tablet and above
+    if ( $( window ).width() > 600 ) {
+        $(".main-nav ul").show();
+    }
 });

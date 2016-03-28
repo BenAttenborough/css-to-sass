@@ -2,19 +2,18 @@
   @extend %clearfix;
   width: 90%;
   margin: 1em auto 0;
-
   @media #{$tablet} {
     width: 100%;
     padding: 0 2.5%;
     margin-bottom: 2em;
   }
-
 }
 
-.bio img {
-  border-radius: 100%;
-  width: 40%;
-  margin: 60px 0;
+.bio {
+  img {
+    width: 40%;
+    margin: 60px 0;
+  }
 }
 
 .bio-img {
@@ -85,7 +84,6 @@
   }
 }
 
-/* CSS zoom effect on hover (I'm avoiding hover styles on smaller views) */
 .image {
   @media #{$desktop} {
     transition: all .5s;

@@ -7,3 +7,9 @@
     clear: both;
   }
 }
+
+%boxshadow {
+  -webkit-box-shadow: 3px 3px 5px 0 rgba(189, 189, 189, 1);
+  -moz-box-shadow: 3px 3px 5px 0 rgba(189, 189, 189, 1);
+  box-shadow: 3px 3px 5px 0 rgba(189, 189, 189, 1);
+}

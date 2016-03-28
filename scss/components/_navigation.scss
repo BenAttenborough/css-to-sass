@@ -27,18 +27,17 @@
 }
 
 .main-nav li {
-  margin: 10px 0;
-  padding: 10px 0;
+  margin: $standard-inset 0;
+  padding: $standard-inset 0;
   font-weight: bold;
 
   @media #{$tablet} {
       display: inline-block;
-      padding-left: 10px;
-      padding-right: 10px;
+      padding-left: $standard-inset;
+      padding-right: $standard-inset;
       background: #fafafa;
-      margin: 0 10px;
+      margin: 0 $standard-inset;
   }
-
 }
 
 .main-nav a {

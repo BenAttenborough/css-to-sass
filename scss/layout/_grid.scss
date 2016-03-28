@@ -16,12 +16,14 @@
 .section {
   margin: 2.5%;
   float: left;
+  @extend %boxshadow;
+  @include border-radius(10px);
   @media #{$tablet} {
     /* 2 columns 5% margin (2.5% both sides) = 45% width each */
     width: 45%;
-    -webkit-box-shadow: 3px 3px 5px 0 rgba(189, 189, 189, 1);
-    -moz-box-shadow: 3px 3px 5px 0 rgba(189, 189, 189, 1);
-    box-shadow: 3px 3px 5px 0 rgba(189, 189, 189, 1);
+    //-webkit-box-shadow: 3px 3px 5px 0 rgba(189, 189, 189, 1);
+    //-moz-box-shadow: 3px 3px 5px 0 rgba(189, 189, 189, 1);
+    //box-shadow: 3px 3px 5px 0 rgba(189, 189, 189, 1);
   }
   @media #{$desktop} {
     /* 3 columns 5% margin (2.5% both sides) = 28.33333333% width each */
