@@ -3,11 +3,22 @@
 $white          : #fff;
 $black          : #000;
 $grey           : #7f7f7f;
+$light-grey     : #ededed;
+$light-blue     : #8080ff;
 
 // Functional color variables
 
+$main-container-color: $white;
 $menu-hover-color: $black;
+
+// Text colors
+
 $main-font-color: $grey;
+$text-link-color: $light-blue;
+
+// Box shadows
+
+$default-box-shadow: 3px 3px 5px 0 rgba(230, 230, 230, 1);
 
 // Font stack
 

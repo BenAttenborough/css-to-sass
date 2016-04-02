@@ -9,7 +9,25 @@
 }
 
 %boxshadow {
-  -webkit-box-shadow: 3px 3px 5px 0 rgba(189, 189, 189, 1);
-  -moz-box-shadow: 3px 3px 5px 0 rgba(189, 189, 189, 1);
-  box-shadow: 3px 3px 5px 0 rgba(189, 189, 189, 1);
+  -webkit-box-shadow: $default-box-shadow;
+  -moz-box-shadow: $default-box-shadow;
+  box-shadow: $default-box-shadow;
+}
+
+%textlink {
+  color: $text-link-color;
+  &:hover {
+    text-decoration: underline;
+  }
+  &:visited {
+    color: lighten($text-link-color, 10%);
+  }
+}
+
+%navlink {
+  font-weight: bold;
+  &:hover {
+    text-decoration: underline;
+    color: $menu-hover-color;
+  }
 }

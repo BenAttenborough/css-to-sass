@@ -3,7 +3,6 @@
 .main-nav {
   width: 90%;
   margin: 0 auto;
-
   @media #{$tablet} {
     display: inline-block;
   }
@@ -29,26 +28,25 @@
 .main-nav li {
   margin: $standard-inset 0;
   padding: $standard-inset 0;
-  font-weight: bold;
 
   @media #{$tablet} {
       display: inline-block;
       padding-left: $standard-inset;
       padding-right: $standard-inset;
-      background: #fafafa;
       margin: 0 $standard-inset;
   }
 }
 
 .main-nav a {
   display: block;
+  @extend %navlink;
 }
 
-.main-nav a:hover,
-.footer-mobile-links a:hover,
-.footer-tabletup-links a:hover {
-  color: $menu-hover-color;
-}
+//.main-nav a:hover,
+//.footer-mobile-links a:hover,
+//.footer-tabletup-links a:hover {
+//  color: $menu-hover-color;
+//}
 
 .footer-tabletup-links {
   display: none;

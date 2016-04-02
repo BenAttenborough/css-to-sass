@@ -59,7 +59,7 @@
 }
 
 .project-info a{
-  color: #8080ff;
+  @extend %textlink;
 }
 
 .image-container {
