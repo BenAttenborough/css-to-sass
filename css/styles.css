@@ -398,11 +398,6 @@ th {
 * {
   box-sizing: border-box; }
 
-body {
-  margin: 0;
-  padding: 0;
-  background: #fafafa; }
-
 /* ===CLEARFIX=== */
 .main-container:after, .bio:after {
   content: "";
@@ -433,6 +428,11 @@ body {
  * be 5% clearence on the margins of the viewport as well
  * as between the containers on multi-column views
  */
+body {
+  margin: 0;
+  padding: 0;
+  background: #fafafa; }
+
 .main-container {
   background-color: #fff;
   padding: 5px 2.5%;
@@ -593,18 +593,6 @@ ul {
 @media (min-width: 600px) {
   .image-container {
     position: relative; } }
-
-@media (min-width: 600px) {
-  .image-info {
-    display: inline-block;
-    position: absolute;
-    top: calc(50% - 12.5px);
-    left: calc(50% - 75px);
-    color: #000; } }
-
-@media (min-width: 600px) {
-  .image-info h3 {
-    margin: 0; } }
 
 @media (min-width: 1016px) {
   .image {

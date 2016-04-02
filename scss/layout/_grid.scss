@@ -5,6 +5,12 @@
  * as between the containers on multi-column views
  */
 
+body {
+  margin: 0;
+  padding: 0;
+  background: $body-color;
+}
+
 .main-container {
   @extend %clearfix;
   background-color: $main-container-color;

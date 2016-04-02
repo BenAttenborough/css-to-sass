@@ -4,10 +4,12 @@ $white          : #fff;
 $black          : #000;
 $grey           : #7f7f7f;
 $light-grey     : #ededed;
+$off-white      : #fafafa;
 $light-blue     : #8080ff;
 
 // Functional color variables
 
+$body-color: $off-white;
 $main-container-color: $white;
 $menu-hover-color: $black;
 

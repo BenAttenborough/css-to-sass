@@ -68,22 +68,6 @@
   }
 }
 
-.image-info {
-  @media #{$tablet} {
-    display: inline-block;
-    position: absolute;
-    top: calc(50% - 12.5px);
-    left: calc(50% - 75px);
-    color: #000;
-  }
-}
-
-.image-info h3 {
-  @media #{$tablet} {
-    margin: 0;
-  }
-}
-
 .image {
   @media #{$desktop} {
     transition: all .5s;
