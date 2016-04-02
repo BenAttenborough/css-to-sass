@@ -2,7 +2,7 @@
   @extend %clearfix;
   width: 90%;
   margin: 1em auto 0;
-  @media #{$tablet} {
+  @include tablet{
     width: 100%;
     padding: 0 2.5%;
     margin-bottom: 2em;
@@ -17,26 +17,26 @@
 }
 
 .bio-img {
-  background: #ededed;
+  background: $bio-image-color;
   width: 80%;
   margin: 0 auto;
-  @media #{$tablet} {
+  @include tablet{
     width: 45%;
     float: right;
     margin: 1em 2.5% 0;
   }
-  @media #{$desktop} {
+  @include desktop{
     width: 35%;
   }
 }
 
 .bio-text {
-  @media #{$tablet} {
+  @include tablet{
     width: 45%;
     float: right;
     margin: 0 2.5%;
   }
-  @media #{$desktop} {
+  @include desktop{
     width: 55%;
     padding: 0 10%;
   }
@@ -63,25 +63,25 @@
 }
 
 .image-container {
-  @media #{$tablet} {
+  @include tablet{
     position: relative;
   }
 }
 
 .image {
-  @media #{$desktop} {
+  @include desktop{
     transition: all .5s;
   }
 }
 
 .image:hover {
-  @media #{$desktop} {
+  @include desktop{
     transform: scale(1.2);
   }
 }
 
 .name {
-  @media #{$desktop} {
+  @include desktop{
     display: inline-block;
     float: left;
   }

@@ -3,24 +3,24 @@
 .main-nav {
   width: 90%;
   margin: 0 auto;
-  @media #{$tablet} {
+  @include tablet{
     display: inline-block;
   }
 
 }
 
 .mobile-menu {
-  @media #{$tablet} {
+  @include tablet{
     display: none;
   }
 }
 
 .main-nav ul {
   display: none;
-  @media #{$tablet} {
+  @include tablet{
     display: block;
   }
-  @media #{$desktop} {
+  @include desktop{
     float: right;
   }
 }
@@ -29,7 +29,7 @@
   margin: $standard-inset 0;
   padding: $standard-inset 0;
 
-  @media #{$tablet} {
+  @include tablet{
       display: inline-block;
       padding-left: $standard-inset;
       padding-right: $standard-inset;

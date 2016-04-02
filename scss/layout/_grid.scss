@@ -24,11 +24,11 @@ body {
   float: left;
   @extend %boxshadow;
   @include border-radius(10px);
-  @media #{$tablet} {
+  @include tablet {
     /* 2 columns 5% margin (2.5% both sides) = 45% width each */
     width: 45%;
   }
-  @media #{$desktop} {
+  @include desktop {
     /* 3 columns 5% margin (2.5% both sides) = 28.33333333% width each */
     width: 28.33333333%;
     float: left;
@@ -36,14 +36,14 @@ body {
 }
 
 .section-img {
-  @media #{$desktop} {
+  @include desktop {
     overflow: hidden;
   }
 }
 
 .section-text {
 
-  @media #{$tablet} {
+  @include tablet {
     padding: 0 1em;
     min-height: 140px;
   }

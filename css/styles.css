@@ -479,9 +479,6 @@ footer {
   margin: 0 auto; }
 
 @media (min-width: 600px) {
-  .footer-mobile-links {
-    display: none; }
-
   .footer-tabletup-links {
     display: block;
     float: right; }

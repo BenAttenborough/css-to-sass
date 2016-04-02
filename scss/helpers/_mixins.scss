@@ -1,7 +1,19 @@
 // Media queries
 
-$tablet: "(min-width: 600px)";
-$desktop: "(min-width: 1016px)";
+$tablet-width: 600px;
+$desktop-width: 1016px;
+
+@mixin tablet {
+  @media (min-width: #{$tablet-width}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: #{$desktop-width}) {
+    @content;
+  }
+}
 
 // Border radius
 

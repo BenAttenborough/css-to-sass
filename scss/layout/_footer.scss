@@ -11,11 +11,7 @@ footer {
   margin: 0 auto;
 }
 
-@media #{$tablet} {
-
-  .footer-mobile-links{
-    display: none;
-  }
+@include tablet{
 
   .footer-tabletup-links {
     display: block;
