@@ -421,9 +421,9 @@ body {
   .project-info a:visited {
     color: #b3b3ff; }
 
-.main-nav a, #contact a {
+.main-nav a, #contact a, .section-text a {
   font-weight: bold; }
-  .main-nav a:hover, #contact a:hover {
+  .main-nav a:hover, #contact a:hover, .section-text a:hover {
     text-decoration: underline;
     color: #000; }
 
